@@ -25,15 +25,11 @@ The tool runs in two main stages:
 
 ---
 
-## Main Components
+## Main Component
 
 | File | Description |
 |------|--------------|
 | **BoolNetwork.py** | Builds and manages the Boolean network structure, experiments, and all permutations of optional interactions. |
-| **ToSmv.py** | Converts the Boolean network into an `.smv` model and runs `nuXmv` verification for each permutation. |
-| **RegulationConditions.py / RegulationConditions_Optional.py** | Generates Boolean update rules for each node, depending on which interactions are active. |
-| **Node.py / Interaction.py** | Define how each component and edge behaves in the network. |
-| **disp_viable_models.py** | Displays the viable network configurations that satisfy all experiments. |
 
 ---
 
