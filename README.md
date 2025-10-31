@@ -46,12 +46,6 @@ The tool runs in two main stages:
 - **Regulation Conditions**  
   Each component has a set of possible Boolean rules (`R1`, `R2`, `R3`, …) that define how its next state depends on other nodes.
 
-- **SMV Conversion**  
-  The `ToSmv` class automatically writes `model.smv` files that contain:
-  - Boolean variables for each component and time step.
-  - INIT and ASSIGN sections describing evolution over time.
-  - Temporal logic specifications (`CTLSPEC` or `LTLSPEC`) to check if experiments are reachable.
-
 ---
 
 ## Example Workflow
