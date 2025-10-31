@@ -1,6 +1,6 @@
 # Boolean Network Builder
 
-## What this is
+## Overveiw
 A Python tool to **build Boolean gene regulatory networks**: define components (genes), add definite/optional interactions, specify named conditions, and assemble time-bounded experiments. It also integrates **regulation rules** per node
 
 ---
