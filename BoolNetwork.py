@@ -34,8 +34,6 @@ class BoolNetwork:
         for i in self.components.values():
             for k in range(h):
                 self.regConds[i.name+str(k)]=RegulationConditions(i,arr).eval_dict(k) #create a dictionary for name with all regulation conditions
-                # self.regConds[i.name+str(k)]=RegulationConditions(i,arr).eval_dict(k) #create a dictionary for name with all regulation conditions
-
 
 
         for i in self.regConds.keys():
@@ -71,7 +69,6 @@ class BoolNetwork:
         for i in self.components.values():
             i.reset() #reset regulation condition because now some connections are present/not present, the network has changed
         for i in definite_interactions: #add the new interactions of the new permutation
-            #self.add_interaction(i)
             self.components[i[1]].add_source(i[0],i[2],True)
         for i in self.components.values():
             if i.sources == {}:
