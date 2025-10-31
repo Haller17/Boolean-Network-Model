@@ -64,9 +64,3 @@ bn.add_condition(["A=1", "B=0"], "start")
 bn.add_condition(["A=0", "B=1"], "target")
 bn.add_experiment(["0", "start", "5", "target"])
 bn.eval_regulation_conditions()
-
-# Step 2: Run nuXmv analysis
-tool = ToSmv(bn)
-tool.mode("ALL")          # optional: use LTL F instead of CTL EF
-tool.num_perms(3)         # limit regulation permutations per network perm
-tool.all_combined()       # run the search and display results
